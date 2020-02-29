@@ -1,0 +1,28 @@
+{
+  "name": "<package-name>",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \" tsc -w \" \"nodemon ./src/local-dev.js\"",
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "db:gen": "npm run build && typeorm migration:generate -n",
+    "db:run": "npm run build && typeorm migration:run",
+    "db:revert": "npm run build && typeorm migration:revert"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "pg": "^7.18.2",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.22"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.4",
+    "concurrently": "^5.1.0",
+    "eslint": "^6.8.0",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "typescript": "^3.8.2"
+  }
+}
