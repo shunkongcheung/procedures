@@ -21,9 +21,9 @@
 * run `serverless config credentials --provider aws --key <key-value> --secret <secret-value>`
 > To limit the Serverless Framework’s access your AWS account, follow these steps to create an IAM User and attach a custom JSON file policy to your new IAM User. This IAM User will have its own set of AWS Access Keys.
 >
-> Login to your AWS Account and go to the Identity & Access Management IAM)( page.
+> 	1. Login to your AWS Account and go to the Identity & Access Management IAM)( page.
 >
-> Click on Users and then Add user. Enter a name in the first field to remind you this User is related to the Service you are deploying with the Serverless Framework, like serverless-servicename-agent. Enable Programmatic access by clicking the checkbox. Click Next to go through to the Permissions page. Click on Create policy. Select the JSON tab, and add a JSON file. You can use this gist as a guide.)
+> 	2. Click on Users and then Add user. Enter a name in the first field to remind you this User is related to the Service you are deploying with the Serverless Framework, like serverless-servicename-agent. Enable Programmatic access by clicking the checkbox. Click Next to go through to the Permissions page. Click on Create policy. Select the JSON tab, and add a JSON file. You can use this gist as a guide.)
 
 ### Severless command
 * `sls <command>`: you may interchange `serverlesss` and `sls`
