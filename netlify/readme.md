@@ -17,3 +17,6 @@
 * select deploy branch for production
 * select other branch for branch-deploy
 * git push
+* add environment variable
+* create domain and follow the steps to create `CNAME` for SSL verification
+* visit your page at your custom domain
