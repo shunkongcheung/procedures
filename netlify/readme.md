@@ -7,7 +7,7 @@
     └── build               # this directoy name should match the build attribute in `netlify.toml`
         └── index.html      # `index.html` should exist in the `build` directory
         └── ...
-    └── src									# this directory name is arbitary. but should match the `build` command
+    └── src                 # this directory name is arbitary. but should match the `build` command
         └── index.ts
         └── ...
 
