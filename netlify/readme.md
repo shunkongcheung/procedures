@@ -20,3 +20,7 @@
 * add environment variable
 * create domain and follow the steps to create `CNAME` for SSL verification
 * visit your page at your custom domain
+
+
+## Note
+* all attributes in `netlify.toml` must be string with double-quotes. Or else netlify will build fail without clear error message
