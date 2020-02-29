@@ -7,12 +7,12 @@
 
     <package-name>.
     ├── dist                   	# Compiled files
-    └── dist-example						# Compiled files for an `example`
+    └── dist-exampl             # Compiled files for an `example`
     └── example									# an example of how to use this package
-    		└── ...
+         ...
     └── src
-    		└── index.ts						# to export object / methods that can be used
-    		└── ...
+        └── index.ts						# to export object / methods that can be used
+        └── ...
     └── package.json						# add some of the command as stated below
     └── readme.md
     └── tsconfig-example.json		# use to compile `dist-example`
