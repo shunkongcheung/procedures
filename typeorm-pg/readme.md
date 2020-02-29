@@ -47,7 +47,7 @@ postgres=# \q
         └── ...
 
 ## TypeORM Command
-`npm run build`: clean and build to `dist`
-`npm run db:gen <filename>`: create a `<timestamp-filename>.ts` under `src/migrations`
-`npm run db:revert`: revert **ONE** migrations
-`npm run db:run`: commit **ALL** pending migrations
+* `npm run build`: clean and build to `dist`
+* `npm run db:gen <filename>`: create a `<timestamp-filename>.ts` under `src/migrations`
+* `npm run db:revert`: revert **ONE** migrations
+* `npm run db:run`: commit **ALL** pending migrations
