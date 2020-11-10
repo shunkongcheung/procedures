@@ -1,4 +1,4 @@
-## Getting Started
+## Getting Started With Postgres
 
 * Postgres default runs at port :5432
 * It is a relational database with special field type like `JSONField` and `ArrayField`
@@ -31,6 +31,41 @@ postgres=# \q
 * On completion, visit https://api.elephantsql.com/console/<database-id>/details for database info
 * Host will be something like raja.db.elephantsql.com
 * Your Database name and user name will be the same
+    
+## Getting Started With MySQL
+
+Install MySQL
+
+```bash
+$ brew install mysql
+$ brew services start mysql
+```
+
+Setup Root Privilage
+
+```bash
+$ mysql_secure_installation
+```
+
+Fill in as follow
+```
+“Would you like to setup VALIDATE PASSWORD component?”: n
+“password for root”: <password>
+“Remove anonymous users?”: y
+“Disallow root login remotely?”: y
+“Remove test database and access to it?”: y
+“Reload privilege tables now?”: y
+```
+
+For more information, see [here](https://medium.com/@JanFaessler/setup-local-lamp-stack-on-mac-with-homebrew-47eb8d6d53ea)
+
+To create new database: 
+```mysql
+mysql> CREATE DATABASE <database-name>;
+mysql> CREATE USER '<username>'@'localhost' IDENTIFIED BY '<password>';
+mysql> GRANT ALL PRIVILEGES ON * . * TO 'onboarding_18'@'localhost';
+mysql> FLUSH PRIVILEGES;
+```
 
 ## TypeORM Directory
 
